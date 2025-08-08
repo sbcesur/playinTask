@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Letter Grid</title>
+  <style>
+    :root {
+      --cell-size: 40px;
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    #grid-wrapper {
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #grid {
+      display: grid;
+      /*grid-template-columns: repeat(10, 40px);*/
+      /*grid-auto-rows: 40px;*/
+      gap: 2px;
+    }
+
+    .cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      font-size: 20px;
+      font-family: monospace;
+      background: #f4f4f4;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Letter Grid</h2>
+<div id="grid"></div>
+
+<script type="module" src="crossword.js"></script>
+
+</body>
+</html>
